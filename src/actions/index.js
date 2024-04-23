@@ -7,3 +7,9 @@ export const addTodos = (title, description) => {
     },
   };
 };
+export const rmvTodo = (index) => {
+  return {
+    type: "DELETE_TODO",
+    payload: index,
+  };
+};

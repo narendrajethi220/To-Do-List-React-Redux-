@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { addTodos } from "../actions/index";
+import { FaPlus } from "react-icons/fa6";
 
 const AddTodos = () => {
   const [title, setTitle] = useState("");
@@ -32,9 +33,12 @@ const AddTodos = () => {
         ></textarea>
       </div>
       <button
-        className="rounded-md p-[4px] bg-zinc-500 ml-[40%] mt-4 hover:bg-zinc-600 hover:text-white active:bg-zinc-500 active:text-black"
+        className="rounded-md p-[4px] bg-zinc-500 ml-[40%] mt-4 hover:bg-zinc-600 hover:text-white active:bg-zinc-500 active:text-black flex items-center "
         onClick={() => handleClick()}
       >
+        <span className="mr-2">
+          <FaPlus />
+        </span>
         Add Todo
       </button>
     </div>
