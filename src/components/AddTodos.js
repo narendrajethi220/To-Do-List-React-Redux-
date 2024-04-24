@@ -14,9 +14,10 @@ const AddTodos = () => {
     setDescription("");
     alert("ToDos Added");
   };
+
   return (
     <div className="  p-4  ">
-      <div className="mt-[8rem] ml-1 text-center flex flex-col w-1/2 mt-4 ml-[10%] border-2 w-1/3 h-[15rem] bg-blue-100 rounded-lg p-4 fixed">
+      <div className="mt-[8rem] ml-1 text-center flex flex-col w-1/2 mt-4 ml-1 border-2 w-1/3 h-[15rem] bg-blue-100 rounded-lg p-4 fixed">
         <label className="text-zinc-500 font-bold">Title</label>
         <input
           className="focus:outline-none h-[20%] p-2"
